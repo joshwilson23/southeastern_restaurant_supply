@@ -49,7 +49,7 @@ $row_2           = mysql_fetch_array($result_2);
 <div id="hero" class="home-page-slider4">
 	<div id="owl-main" class="owl-carousel silder4 owl-inner-nav owl-ui-sm">
 		
-		<div class="item" style="background-image: url(assets/images/sliders/southeastern_banner_winco.jpg);">
+		<div class="item" style="background-image: url(assets/images/sliders/slide1.jpg);">
 			<!-- <div class="container-fluid">
 				<div class="caption vertical-center text-left">
 					<div class="big-text fadeInDown-1">
