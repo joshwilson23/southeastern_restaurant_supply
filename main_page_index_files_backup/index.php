@@ -69,10 +69,10 @@ $row_2           = mysql_fetch_array($result_2);
 				</div> 
 			</div> -->
 		</div> 
-        <div class="item" style="background-image: url(/uploads/custom_banner.jpg);">
+        <div class="item" style="background-image: url(/assets/images/sliders/Southeastern_banner_elmeco.jpg);">
         
         </div>
-		<div class="item" style="background-image: url(assets/images/sliders/Southeastern_banner_elmeco.jpg);">
+		<div class="item" style="background-image: url(assets/images/sliders/Southeastern_banner_ranges.jpg);">
 			<!-- <div class="container-fluid">
 				<div class="caption vertical-center text-left">
 					<div class="big-text fadeInDown-1">
@@ -93,7 +93,7 @@ $row_2           = mysql_fetch_array($result_2);
 			</div> --><!-- /.container-fluid -->
 		</div><!-- /.item -->
 
-		<div class="item" style="background-image: url(assets/images/sliders/5.jpg);">
+		<div class="item" style="background-image: url(assets/images/sliders/Southeastern_banner_robotcoupe.jpg);">
 			<!-- <div class="container-fluid">
 				<div class="caption vertical-center text-left">
 					<div class="big-text fadeInDown-1">
