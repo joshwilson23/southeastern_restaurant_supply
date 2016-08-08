@@ -72,7 +72,7 @@ $row_2           = mysql_fetch_array($result_2);
         <div class="item" style="background-image: url(/uploads/custom_banner.jpg);">
         
         </div>
-		<div class="item" style="background-image: url(assets/images/sliders/2.jpg);">
+		<div class="item" style="background-image: url(assets/images/sliders/Southeastern_banner_elmeco.jpg);">
 			<!-- <div class="container-fluid">
 				<div class="caption vertical-center text-left">
 					<div class="big-text fadeInDown-1">
