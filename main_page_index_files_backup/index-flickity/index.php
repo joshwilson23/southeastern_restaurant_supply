@@ -46,109 +46,38 @@ $row_2           = mysql_fetch_array($result_2);
 <div class="body-content" id="top-banner-and-menu">
 	<!-- ========================================== SECTION – HERO ========================================= -->
 			
-<div id="hero" class="home-page-slider4">
-	<div id="owl-main" class="owl-carousel silder4 owl-inner-nav owl-ui-sm">
+<div class="hero-carousel" data-flickity="" data-js-module="hero-carousel">
+	<div class="hero-carousel__cell hero-carousel__cell--1">
 
-		<div class="item" style="background-image: url(assets/images/sliders/3.jpg);"></div>
-		
-		<div class="item" style="background-image: url(assets/images/sliders/southeastern_banner_winco.jpg);">
-			<!-- <div class="container-fluid">
-				<div class="caption vertical-center text-left">
-					<div class="big-text fadeInDown-1">
-						The new <span class="highlight">imac</span> for you
-					</div>
+		<div class="hero-carousel__cell__content" img-src="http://cdn3.bigcommerce.com/s-z96sui/product_images/theme_images/gilletterestaurantequipment__02014.jpg?t=1431097563"></div>
+		</div>
 
-					<div class="excerpt m-t-20 fadeInDown-2 hidden-xs">
-					
-						<span>
-							21.5-Inch Now Starting At $1099 <br>
-							27-Inch Starting At $1799
-						</span>
-					</div>
-					<div class="button-holder fadeInDown-3">
-						<a href="index.php?page=single-product" class="btn btn-black btn-uppercase shop-now-button">Shop Now</a>
-					</div>
-				</div> 
-			</div> -->
-		</div> 
-        <div class="item" style="background-image: url(/assets/images/sliders/Southeastern_banner_elmeco.jpg);">
+		<div class="hero-carousel__cell__content--2">
+		<div class="hero-carousel__cell__content" style="background-image: url(assets/images/sliders/southeastern_banner_winco.jpg);">
+			
+		</div>
+		</div>
+
+		<div class="hero-carousel__cell__content--3"> 
+        <div class="hero-carousel__cell__content" style="background-image: url(/assets/images/sliders/Southeastern_banner_elmeco.jpg);">
         
         </div>
-		<div class="item" style="background-image: url(assets/images/sliders/Southeastern_banner_ranges.jpg);">
-			<!-- <div class="container-fluid">
-				<div class="caption vertical-center text-left">
-					<div class="big-text fadeInDown-1">
-						The new <span class="highlight">imac</span> for you
-					</div>
+        </div>
 
-					<div class="excerpt m-t-20 fadeInDown-2 hidden-xs">
-						 
-					<span>
-						21.5-Inch Now Starting At $1099 <br>
-						27-Inch Starting At $1799
-					</span>
-					</div>
-					<div class="button-holder fadeInDown-3">
-						<a href="index.php?page=single-product" class="btn btn-black btn-uppercase shop-now-button">Shop Now</a>
-					</div>
-				</div>  
-			</div> --><!-- /.container-fluid -->
-		</div><!-- /.item -->
-
-		<div class="item" style="background-image: url(assets/images/sliders/Southeastern_banner_robotcoupe.jpg);">
-			<!-- <div class="container-fluid">
-				<div class="caption vertical-center text-left">
-					<div class="big-text fadeInDown-1">
-						The new <span class="highlight">imac</span> for you
-					</div>
-
-					<div class="excerpt m-t-20 fadeInDown-2 hidden-xs">
-						 
-					<span>
-						21.5-Inch Now Starting At $1099 <br>
-						27-Inch Starting At $1799
-					</span>
-					</div>
-					<div class="button-holder fadeInDown-3">
-						<a href="index.php?page=single-product" class="btn btn-black btn-uppercase shop-now-button">Shop Now</a>
-					</div>
-				</div> 
-			</div> --><!-- /.container-fluid -->
-		</div><!-- /.item -->
-
+        <div class="hero-carousel__cell__content--4">
+		<div class="hero-carousel__cell__content" style="background-image: url(assets/images/sliders/Southeastern_banner_ranges.jpg);">
+			
 		
-			<!-- <div class="container-fluid">
-				<div class="caption vertical-center text-left">
-					<div class="big-text fadeInDown-1">
-						The new <span class="highlight">imac</span> for you
-					</div>
+		</div>
+		</div>
 
-					<div class="excerpt m-t-20 fadeInDown-2 hidden-xs">
-						 
-					<span>
-						21.5-Inch Now Starting At $1099 <br>
-						27-Inch Starting At $1799
-					</span>
-					</div>
-					<div class="button-holder fadeInDown-3">
-						<a href="index.php?page=single-product" class="btn btn-black btn-uppercase shop-now-button">Shop Now</a>
-					</div>
-				</div> 
-			</div> --><!-- /.container-fluid -->
-		<!-- /.item -->
-		
+		<div class="hero-carousel__cell__content--5">
+		<div class="hero-carousel__cell__content" style="background-image: url(assets/images/sliders/Southeastern_banner_robotcoupe.jpg);">
+			
+		</div>
 
-	</div><!-- /.owl-carousel -->
-<!-- 	<div class="customNavigation">
-		<div class="container">
-				
-				<div class="controls clearfix hidden-xs">
-					<a href="#" data-target=".silder4" class="btn btn-primary pull-left owl-prev"><i class="fa fa-angle-left"></i></a>
-					<a href="#" data-target=".silder4" class="btn btn-primary pull-right owl-next"><i class="fa fa-angle-right"></i></a>
-				</div> 
-				
-			</div>
-	</div> -->
+
+	</div>
 </div>
 			
 <!-- ========================================= SECTION – HERO : END ========================================= -->	<div class="container">
