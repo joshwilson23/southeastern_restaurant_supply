@@ -2114,7 +2114,7 @@ a {
   #owl-main .item {
 
 
-    border-size: 96% 86%;
+    border-size: 100% cover;
 
   }
 }
@@ -2122,9 +2122,9 @@ a {
 #owl-main .item {
   background-color: #FFFFFF;
   background-position: center 55%;
-  background-size: 100%;
-  background-repeat: no-repeat, repeat-x;
+  background-size: cover;
   height: 360px;
+  
 }
 #owl-main .item .caption {
   color: #636363;

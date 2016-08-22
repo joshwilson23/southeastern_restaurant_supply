@@ -221,6 +221,10 @@ $row_footer_brand          = mysql_fetch_array($result_footer_brand);
                    Copyright © 2016
                     - All rights Reserved
                 </div>
+
+                <div class="security_cert">
+                    <span id="siteseal"><script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=v36d5Fipcxk8xQSQ8pG2lAYFZs0DG4jOQ13bnyvAGt1QSw6us4m611HWEiV6"></script></span>
+                </div>
             </div>
             <div class="col-xs-12 col-sm-6 no-padding">
                 <div class="clearfix payment-methods">
