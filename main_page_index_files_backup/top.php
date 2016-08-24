@@ -73,35 +73,35 @@ if ($count_cart > 0)
     	<ul class="share-buttons">
         
         <?if($row_ic['f_ch']==1){?>
-<li><a href="<?=$row_ic['f']?>" title="We are on Facebook" target="_blank"><img src="https://www.southeasternrestaurantsupply.com/assets/images/color/Facebook.png"></a></li>
+<li><a href="<?=$row_ic['f']?>" title="We are on Facebook" target="_blank"><img src="https://southeasternrestaurantsupply.com/assets/images/color/Facebook.png"></a></li>
 
         <?}else{?>
-  <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.southeasternrestaurantsupply.com%2F&t=Restaurant%20supply" title="Share on Facebook" target="_blank"><img src="https://www.southeasternrestaurantsupply.com/assets/images/color/Facebook.png"></a></li>
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.southeasternrestaurantsupply.com%2F&t=Restaurant%20supply" title="Share on Facebook" target="_blank"><img src="https://southeasternrestaurantsupply.com/assets/images/color/Facebook.png"></a></li>
   <?}?>
   
   <?if($row_ic['t_ch']==1){?>
-    <li><a href="<?=$row_ic['t']?>" target="_blank" title="We are on Twitter"><img src="https://www.southeasternrestaurantsupply.com/assets/images/color/Twitter.png"></a></li>
+    <li><a href="<?=$row_ic['t']?>" target="_blank" title="We are on Twitter"><img src="https://southeasternrestaurantsupply.com/assets/images/color/Twitter.png"></a></li>
 
     <?}else{?>
-  <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fwww.southeasternrestaurantsupply.com%2F&text=Restaurant%20supply:%20http%3A%2F%2Fwww.southeasternrestaurantsupply.com%2F" target="_blank" title="Tweet"><img src="https://www.southeasternrestaurantsupply.com/assets/images/color/Twitter.png"></a></li>
+  <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fwww.southeasternrestaurantsupply.com%2F&text=Restaurant%20supply:%20http%3A%2F%2Fwww.southeasternrestaurantsupply.com%2F" target="_blank" title="Tweet"><img src="https://southeasternrestaurantsupply.com/assets/images/color/Twitter.png"></a></li>
  <?}?>
    <?if($row_ic['g_ch']==1){?>
-    <li><a href="<?=$row_ic['g']?>" target="_blank" title="We are on Google+"><img src="https://www.southeasternrestaurantsupply.com/assets/images/color/Google+.png"></a></li>
+    <li><a href="<?=$row_ic['g']?>" target="_blank" title="We are on Google+"><img src="https://southeasternrestaurantsupply.com/assets/images/color/Google+.png"></a></li>
 
    <?}else{?>
- <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fwww.southeasternrestaurantsupply.com%2F" target="_blank" title="Share on Google+"><img src="https://www.southeasternrestaurantsupply.com/assets/images/color/Google+.png"></a></li>
+ <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fwww.southeasternrestaurantsupply.com%2F" target="_blank" title="Share on Google+"><img src="https://southeasternrestaurantsupply.com/assets/images/color/Google+.png"></a></li>
  <?}?>
  
- <li><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.southeasternrestaurantsupply.com%2F&media=https://www.southeasternrestaurantsupply.com/assets/images/logo.png&description=Restaurant%20equipment%20and%20refrigeration%20supplies" target="_blank" title="Pin it"><img src="https://www.southeasternrestaurantsupply.com/assets/images/color/Pinterest.png"></a></li>
+ <li><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.southeasternrestaurantsupply.com%2F&media=https://www.southeasternrestaurantsupply.com/assets/images/logo.png&description=Restaurant%20equipment%20and%20refrigeration%20supplies" target="_blank" title="Pin it"><img src="https://southeasternrestaurantsupply.com/assets/images/color/Pinterest.png"></a></li>
   
     <?if($row_ic['l_ch']==1){?>
-      <li><a href="<?=$row_ic['l']?>" target="_blank" title="We are on LinkedIn"><img src="https://www.southeasternrestaurantsupply.com/assets/images/color/LinkedIn.png"></a></li>
+      <li><a href="<?=$row_ic['l']?>" target="_blank" title="We are on LinkedIn"><img src="https://southeasternrestaurantsupply.com/assets/images/color/LinkedIn.png"></a></li>
 
      <?}else{?>
-  <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fwww.southeasternrestaurantsupply.com%2F&title=Restaurant%20supply&summary=Restaurant%20equipment%20and%20refrigeration%20supplies&source=http%3A%2F%2Fwww.southeasternrestaurantsupply.com%2F" target="_blank" title="Share on LinkedIn"><img src="https://www.southeasternrestaurantsupply.com/assets/images/color/LinkedIn.png"></a></li>
+  <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fwww.southeasternrestaurantsupply.com%2F&title=Restaurant%20supply&summary=Restaurant%20equipment%20and%20refrigeration%20supplies&source=http%3A%2F%2Fwww.southeasternrestaurantsupply.com%2F" target="_blank" title="Share on LinkedIn"><img src="https://southeasternrestaurantsupply.com/assets/images/color/LinkedIn.png"></a></li>
    <?}?>
   
-  <li><a href="https://pinboard.in/popup_login/?url=http%3A%2F%2Fwww.southeasternrestaurantsupply.com%2F&title=Restaurant%20supply&description=Restaurant%20equipment%20and%20refrigeration%20supplies" target="_blank" title="Save to Pinboard"><img src="https://www.southeasternrestaurantsupply.com/assets/images/color/Pinboard.png"></a></li>
+  <li><a href="https://pinboard.in/popup_login/?url=http%3A%2F%2Fwww.southeasternrestaurantsupply.com%2F&title=Restaurant%20supply&description=Restaurant%20equipment%20and%20refrigeration%20supplies" target="_blank" title="Save to Pinboard"><img src="https://southeasternrestaurantsupply.com/assets/images/color/Pinboard.png"></a></li>
 </ul>
 			</div>
 			<div class="clearfix"></div><style>

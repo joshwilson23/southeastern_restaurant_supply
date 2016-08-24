@@ -32,8 +32,32 @@
         <!-- Favicon -->
         <link rel="shortcut icon" href="https://southeasternrestaurantsupply.com/assets/images/favicon.ico">
 
-        <!-- HTML5 elements and media queries Support for IE8 : HTML5 shim and Respond.js -->
-        <!--[if lt IE 9]>
-            <script src="assets/js/html5shiv.js"></script>
-            <script src="assets/js/respond.min.js"></script>
-        <![endif]-->
+       <script type="text/javascript">
+
+
+
+function redirect() {
+    var redirectLocation = window.location.protocol;
+    var redirectUrl = window.location.href;
+    console.log(redirectLocation);
+
+if (redirectLocation == "http:") 
+
+{
+    window.location.href = "https://southeasternrestaurantsupply.com/";
+
+}
+
+else if (redirectUrl == "https://www.southeasternrestaurantsupply.com/") 
+
+{
+    window.location.href = "https://southeasternrestaurantsupply.com/";
+
+}
+
+}
+
+redirect();
+
+
+</script>
