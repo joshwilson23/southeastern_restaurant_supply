@@ -20,6 +20,7 @@ $row_2           = mysql_fetch_array($result_2);
 	    <meta name="keywords" content="Southeastern, Restaurant Supply">
 	    <meta name="robots" content="all">
         <meta property="og:image" content="http://www.southeasternrestaurantsupply.com/uploads/logo.png" />
+        <meta name="google-site-verification" content="7zBsMAWWIsLxDtjVi9lNK7wYyOdvsE4DLsII-qdmaos" />
 
 	    <title>Home - Southeastern Restaurant Supply</title>
 
@@ -49,7 +50,7 @@ $row_2           = mysql_fetch_array($result_2);
 <div id="hero" class="home-page-slider4">
 	<div id="owl-main" class="owl-carousel silder4 owl-inner-nav owl-ui-sm">
 
-		<div class="item" style="background-image: url(assets/images/sliders/3.jpg);"></div>
+		
 		
 		<div class="item" style="background-image: url(assets/images/sliders/southeastern_banner_winco.jpg);">
 			<!-- <div class="container-fluid">
@@ -117,25 +118,7 @@ $row_2           = mysql_fetch_array($result_2);
 		</div><!-- /.item -->
 
 		
-			<!-- <div class="container-fluid">
-				<div class="caption vertical-center text-left">
-					<div class="big-text fadeInDown-1">
-						The new <span class="highlight">imac</span> for you
-					</div>
-
-					<div class="excerpt m-t-20 fadeInDown-2 hidden-xs">
-						 
-					<span>
-						21.5-Inch Now Starting At $1099 <br>
-						27-Inch Starting At $1799
-					</span>
-					</div>
-					<div class="button-holder fadeInDown-3">
-						<a href="index.php?page=single-product" class="btn btn-black btn-uppercase shop-now-button">Shop Now</a>
-					</div>
-				</div> 
-			</div> --><!-- /.container-fluid -->
-		<!-- /.item -->
+			<div class="item" style="background-image: url(assets/images/sliders/3.jpg);"></div>
 		
 
 	</div><!-- /.owl-carousel -->
@@ -221,12 +204,7 @@ $row_2           = mysql_fetch_array($result_2);
 		<div id="product-tabs-slider" class="scroll-tabs outer-top-vs wow fadeInUp">
 			<div class="more-info-tab clearfix ">
 			   <h3 class="new-product-title pull-left">New Products</h3>
-				<!-- <ul class="nav nav-tabs nav-tab-line pull-right" id="new-products-1">
-					<li class="active"><a href="#all" data-toggle="tab">All</a></li>
-					<li><a href="#smartphone" data-toggle="tab">smartphone</a></li>
-					<li><a href="#laptop" data-toggle="tab">laptop</a></li>
-					<li><a href="#apple" data-toggle="tab">apple</a></li>
-				</ul> --><!-- /.nav-tabs -->
+				
 			</div>
 
 			<div class="tab-content outer-top-xs">
@@ -250,7 +228,7 @@ $row_2           = mysql_fetch_array($result_2);
 			
 		
 		<div class="product-info text-left">
-			<h3 class="name"><a href="/product.php?id=<?=$row['id']?>"><?=$row['name']?></a></h3>
+			<h3 class="name"><a href="/product.php?id=<?=$row['id']?>"><?=$row['name' ]?></a></h3>
  			<div class="description"><?=substr(strip_tags($row['description']), 0, 120);?>...</div>
 
 			<div class="product-price">	

@@ -95,49 +95,7 @@ $row_3           = mysql_fetch_array($result_3);
 			<div class='row single-product outer-bottom-sm '>
 				<div class='col-md-3 sidebar'>
 					<div class="sidebar-module-container">
-						<!-- ============================================== RELATED PRODUCTS ============================================== -->
-<div class="sidebar-widget hot-deals wow fadeInUp">
-	<h3 class="section-title">hot deals</h3>
-	<div class="owl-carousel related-product sidebar-carousel custom-carousel owl-theme outer-top-xs">
-		
-		<?do{?>												       
-			<div class="item">
-					<div class="products">
-						<div class="hot-deal-wrapper">
-							<div class="image">
-								<a href="/product.php?id=<?=$row_3['id']?>">
-								<img src="/uploads/t.php?src=/uploads/<?=$row_3['image']?>&amp;h=270&amp;w=270&amp;q=100&amp;zc=1" alt="">
-							</a>
-							</div>
-							<!-- <div class="tag hot"><span>hot</span></div> -->
-							
-						</div><!-- /.hot-deal-wrapper -->
-
-						<div class="product-info text-left m-t-20">
-							<h3 class="name"><a href="/product.php?id=<?=$row_3['id']?>"><?=$row_3['name']?></a></h3> 
-							<div class="description"><?=substr(strip_tags($row_3['description']), 0, 120);?>...</div>
-								<div class="product-price">	
-									<span class="price"><?if($row_3['price']!=='0.00'){?>
-										$<?echo number_format($row_3['price'],2);}?>
-									</span>
-										<?if($row_3['old_price']!=='0.00' && $row_3['price']!=='0.00'){?>
-										<span class="price-before-discount">$<?=number_format($row_3['old_price'],2)?>	
-										</span>
-										<?}?>					
-								</div>
-							 
-							
-						</div><!-- /.product-info -->
-
-					 
-					</div>	
-					</div>		        
-			<?} while ($row_3 = mysql_fetch_array($result_3));?>									 	        
-						
-	    
-    </div><!-- /.sidebar-widget -->
-</div>
-<!-- ============================================== RELATED PRODUCTS: END ============================================== -->						<!-- ============================================== COLOR============================================== -->
+						<!-- ============================================== COLOR============================================== -->
  
     
 <!-- ============================================== COLOR: END ============================================== -->
@@ -217,44 +175,37 @@ $row_3           = mysql_fetch_array($result_3);
 							<div itemscope itemtype="http://schema.org/Product" class="product-info">
 								<h1 itemprop="name" class="name"><?=$row['name']?></h1>
 								
-							<!-- 	<div class="rating-reviews m-t-20">
-									<div class="row">
-										<div class="col-sm-3">
-											<div class="rating rateit-small"></div>
-										</div>
-										<div class="col-sm-8">
-											<div class="reviews">
-												<a href="#" class="lnk">(06 Reviews)</a>
-											</div>
-										</div>
-									</div> 		
-								</div>  -->
-
-								<!-- <div class="stock-container info-container m-t-10">
-									<div class="row">
-										<div class="col-sm-3">
-											<div class="stock-box">
-												<span class="label">Availability :</span>
-											</div>	
-										</div>
-										<div class="col-sm-9">
-											<div class="stock-box">
-												<span class="value">Instock</span>
-											</div>	
-										</div>
-									</div>	
-								</div> -->
+							
 								<div class="price-container info-container m-t-20">
 								<div class="row">
 									
 
 									<div class="col-sm-6">
 										<div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="price-box">
-											<span itemprop="priceCurrency" content="USD"> <span itemprop="price" class="price" id="original_price"><?if($row['price']!=='0.00'){?>
-												$<?echo number_format($row['price'],2);}else{?> <span style="font-size: 14px;">Call For Special Pricing</span><?}?>
+											<span itemprop="priceCurrency" content="USD"><span itemprop="price" class="price" id="original_price"><?if($row['price']!=='0.00'){?>
+												<?echo number_format($row['price'],2);}else{?> <span style="font-size: 14px;">Call For Special Pricing</span><?}?>
+											</span>
 											</span>
 											<?if($row['old_price']!=='0.00' && $row['price']!=='0.00'){?>
-										     <span class="price-strike" id="old_price"> $<?=number_format($row['old_price'],2)?>	</span><?}?> 
+										     <span class="price-strike" id="old_price"> <?=number_format($row['old_price'],2)?>	</span><?}?> 
+
+
+										     <? if($row['id'] === '85' || $row['id'] === '472' || $row['id'] === '22' || $row['id'] === '12' || $row['id'] === '110' || $row['id'] === '170' || $row['id'] === '159' || $row['id'] === '158' || $row['id'] === '274' || $row['id'] === '95'){if (isset($_POST["send"])) { $to = 'mike@panhandlerestaurantservices.com'; //email recipient
+																	  $subject = 'Email me My Price Quote!'; //email subject
+																	  $message = 'Email: ' . $_POST['email']; //gathers the input email to display for reply
+																	  $message .= 'Product ID: ' . $_SERVER['QUERY_STRING'];
+																	  $headers = "From: quotes@southeasternrestaurantsupply.com";
+																	  $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
+																	  	
+																	  $success = mail($to, $subject, $message, $headers);}?> 
+
+																	  
+																	  <form class="form" method="post">
+											<label for="email"><style type="text/css"> #h4 {color: #D33433; font-size: 1.6rem;} </style><em><h4 id="h4">Email me my price!</h4></em></label>
+											<input class="form" type="email" name="email" id="priceEmail" placeholder="john@smith.com"> <br>
+											<input data-toggle="tooltip" data-placement="right" title="Thank you! We will send you the price shortly. If you would rather call us at (888) 308-4885 Monday - Friday, from 8 a.m. to 5 p.m. EST we will be happy to help you with any questions you have regarding this or any of our products." class="btn-primary" id="sendButton" type="submit" name="send" value="SEND">
+										</form> <?}?>
+										
 										</div>
 									</div> 
 
@@ -317,6 +268,20 @@ $row_3           = mysql_fetch_array($result_3);
 									</div><!-- /.row -->	
 								</div>
                                 <?}else{?>
+                                	<div class="stock-container info-container m-t-10">
+                                		<div class="row">
+                                			<div class="col-sm-3">
+                                				<div class="stock-box">
+                                					<span class="label">Availability :</span>
+                                				</div>
+                                			</div>
+                                			<div class="col-sm-9">
+                                				<div class="stock-box">
+                                					<link itemprop="availability" href="http://schema.org/InStock" content="InStock" class="value"/><em>In Stock!</em>
+                                				</div>
+                                			</div>
+                                		</div>
+                                	</div>
 
 							 <?if($row['price']!=='0.00'){?>
 								<div class="row outer-top-vs">
@@ -341,7 +306,7 @@ $row_3           = mysql_fetch_array($result_3);
 								</div>
 								<?}}?>
 								<div class="description-container m-t-20">
-									<?=$row['description']?>
+									<span itemprop="description"><?=$row['description']?></span>
 								</div><!-- /.description-container -->
 								<?if(!empty($row['file_name'])){?>
 								<div class="col-sm-24 text-center">
@@ -387,6 +352,55 @@ ul.share-buttons li{
 				</div><!-- /.row -->
 
 					
+
+
+
+						<!-- ============================================== RELATED PRODUCTS ============================================== -->
+<div class="sidebar-widget hot-deals wow fadeInUp">
+	<h3 class="section-title">hot deals</h3>
+	<div class="owl-carousel related-product sidebar-carousel custom-carousel owl-theme outer-top-xs">
+		
+		<?do{?>												       
+			<div class="item">
+					<div class="products">
+						<div class="hot-deal-wrapper">
+							<div class="image">
+								<a href="/product.php?id=<?=$row_3['id']?>">
+								<img src="/uploads/t.php?src=/uploads/<?=$row_3['image']?>&amp;h=270&amp;w=270&amp;q=100&amp;zc=1" alt="">
+							</a>
+							</div>
+							<!-- <div class="tag hot"><span>hot</span></div> -->
+							
+						</div><!-- /.hot-deal-wrapper -->
+
+						<div class="product-info text-left m-t-20">
+							<h3 class="name"><a href="/product.php?id=<?=$row_3['id']?>"><?=$row_3['name']?></a></h3> 
+							<div class="description"><?=substr(strip_tags($row_3['description']), 0, 120);?>...</div>
+								<div class="product-price">	
+									<span class="price"><?if($row_3['price']!=='0.00'){?>
+										$<?echo number_format($row_3['price'],2);}?>
+									</span>
+										<?if($row_3['old_price']!=='0.00' && $row_3['price']!=='0.00'){?>
+										<span class="price-before-discount">$<?=number_format($row_3['old_price'],2)?>	
+										</span>
+										<?}?>					
+								</div>
+							 
+							
+						</div><!-- /.product-info -->
+
+					 
+					</div>	
+					</div>		        
+			<?} while ($row_3 = mysql_fetch_array($result_3));?>									 	        
+						
+	    
+    </div><!-- /.sidebar-widget -->
+</div>
+<!-- ============================================== RELATED PRODUCTS: END ============================================== -->
+
+
+
 			
 
 		<!-- ============================================== FEATURED PRODUCT ============================================== -->
@@ -559,3 +573,7 @@ ul.share-buttons li{
 		});
 	}
 </script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert-dev.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css" />
+

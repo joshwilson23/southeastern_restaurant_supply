@@ -4,6 +4,35 @@
 .green-text {
   color: #abd07e !important;
 }
+
+.form input[type=email]  {
+  padding: 12px 20px 12px 20px;
+  margin: 8px 1px 10px;
+  box-sizing: border-box;
+  border: 2px solid #D33433;
+}
+
+#sendButton {
+  padding: 1px 19px;
+  margin: 8px 1px 10px;
+  box-sizing: border-box;
+}
+
+
+.btn-primary + .tooltip > .tooltip-inner {
+  background-color: lightgray;
+      width: 250px;
+      height: 180px; 
+      color: #D33433; 
+      border: 1px solid lightgray; 
+      padding: 15px;
+      font-size: 12px;
+}
+
+.test + .tooltip.right > .tooltip-arrow {
+      border-right: 0px solid black;
+      }
+
 a:focus {
     outline: 0;
 }
@@ -2122,8 +2151,9 @@ a {
 #owl-main .item {
   background-color: #FFFFFF;
   background-position: center 55%;
-  background-size: cover;
-  height: 360px;
+  background-size: 100%;
+  background-repeat: repeat-x;
+  height: 355px;
   
 }
 #owl-main .item .caption {
@@ -4030,7 +4060,7 @@ a {
   border: 2px solid #f2f2f2;
   color: #747474;
 }
-.homepage-container .btn-primary:hover,
+.homepage-container .btn-primary,
 .homepage-container .btn-primary:focus {
   color: #fff;
 }

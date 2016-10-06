@@ -244,13 +244,15 @@ $row_footer_brand          = mysql_fetch_array($result_footer_brand);
 
 
 
-	<script src="assets/js/jquery-1.11.1.min.js"></script>
+	<script
+              src="/assets/js/jquery-1.11.1.min.js"></script>
 	    <script src="/assets/js/jquery.number.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
 	
 	<script src="assets/js/bootstrap-hover-dropdown.min.js"></script>
 	<script src="assets/js/owl.carousel.min.js"></script>
 	
+    <script src="assets/js/tipped.js"></script>
 	<script src="assets/js/echo.min.js"></script>
 	<script src="assets/js/jquery.easing-1.3.min.js"></script>
 	<script src="assets/js/bootstrap-slider.min.js"></script>
@@ -305,3 +307,8 @@ if(isset($_SESSION['s_p'])) {unset($_SESSION['s_p']);}
 if(isset($_SESSION['f_p1'])) {unset($_SESSION['f_p1']);} 
 if(isset($_SESSION['s_p1'])) {unset($_SESSION['s_p1']);} 
  ?> 
+
+ <script> $(document).ready(function() {
+    $('[data-toggle="tooltip"]').tooltip();
+ });
+ </script>
