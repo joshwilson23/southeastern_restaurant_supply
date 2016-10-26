@@ -190,7 +190,10 @@ $row_3           = mysql_fetch_array($result_3);
 										     <span class="price-strike" id="old_price"> <?=number_format($row['old_price'],2)?>	</span><?}?> 
 
 
-										     <? if($row['id'] === '85' || $row['id'] === '472' || $row['id'] === '22' || $row['id'] === '12' || $row['id'] === '110' || $row['id'] === '170' || $row['id'] === '159' || $row['id'] === '158' || $row['id'] === '274' || $row['id'] === '95'){if (isset($_POST["send"])) { $to = 'mike@panhandlerestaurantservices.com'; //email recipient
+										     <? if( $row['id'] === '12'){ ?><h3><em>FREE SHIPPING</em></h3> <?}?>
+
+
+										     <? if($row['id'] === '85' || $row['id'] === '472' || $row['id'] === '22' || $row['id'] === '110' || $row['id'] === '170' || $row['id'] === '159' || $row['id'] === '158' || $row['id'] === '274' || $row['id'] === '95'){if (isset($_POST["send"])) { $to = 'mike@panhandlerestaurantservices.com'; //email recipient
 																	  $subject = 'Email me My Price Quote!'; //email subject
 																	  $message = 'Email: ' . $_POST['email']; //gathers the input email to display for reply
 																	  $message .= 'Product ID: ' . $_SERVER['QUERY_STRING'];

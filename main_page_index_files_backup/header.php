@@ -1,5 +1,5 @@
 <!-- Bootstrap Core CSS -->
-        <link rel="stylesheet" href="https://southeasternrestaurantsupply.com/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://southeasternrestaurantsupply.com/assets/css/bootstrap.css">
         <meta name="google-site-verification" content="7zBsMAWWIsLxDtjVi9lNK7wYyOdvsE4DLsII-qdmaos" />
         <!-- Customizable CSS -->
         <link rel="stylesheet" href="https://southeasternrestaurantsupply.com/assets/css/tipped.css">
